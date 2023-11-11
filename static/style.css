@@ -1,0 +1,175 @@
+
+body{
+    height: 100%;
+    margin: 0;
+    background-image:url('https://wallpapers.com/images/hd/cute-red-panda-pictures-sererbq0fdjum7rn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.793), rgba(0, 0, 0, 0.809));
+    backdrop-filter: blur(10px);
+    z-index: -1; /* Ensure the topnav appears above the blurred background */
+}
+
+.logo-image{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 12px; /* Adjust the margin as needed */
+    margin-left: 12px; /* Adjust the margin as needed */
+    
+    
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #2d2d2d;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50px; /* Set height to 100% */
+    width: 100%; /* Set width to 100% */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative; /* Ensure the topnav is positioned relative to its containing element */
+    z-index: 1; /* Ensure the topnav appears above the blurred background */
+    
+
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #d3781d;
+    color: white;
+    transition: 0.2s linear;
+    height: 100%; /* Set height to 100% */
+
+    display: flex;
+    align-items: center; /* Vertically center the text */
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(81, 80, 77);
+    color: white;
+    height: 100%; /* Set height to 100% */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+  }
+
+h1 {
+    color: rgba(255, 255, 255, 0.797);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+#content {
+    padding-top: 10px;
+    padding-bottom: 150px;
+
+    border-radius: 30px;
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+iframe {
+    filter: drop-shadow(0 0 0.65rem rgb(220, 83, 20));
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 800px; 
+        height: 400px;
+
+}
+
+#myButton {
+    background-color: #d69859;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+    cursor: pointer;
+    border-radius: 10px;
+    
+
+}
+
+#myButton:hover {
+    background-color: #c98541;
+    
+
+}
+.item {
+    display:flex;
+    
+    justify-content:center;
+    
+    align-items:center;
+    
+    }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   iframe{
+    width: 500px; height: 400px;
+    }
+    
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 600px) {
+        iframe{
+         width: 400px; height: 300px;
+         }
+        
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    @media only screen and (max-width: 600px) {
+      
+}
+}
+/* Extra large devices (large laptops and desktops, */
+
+@media only screen and (min-width: 1200px) {
+   
+}

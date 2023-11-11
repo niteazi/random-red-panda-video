@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Red Panda Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <link rel="icon" href="https://i.pinimg.com/originals/63/06/b4/6306b4f55212d8220a025f12fbd6eaf0.png">
+
+    
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo-image">
+            <img src="https://i.postimg.cc/hvLpbH0h/logo-jpg.png" class="img-fluid">
+        </div>
+        <a class="active" href="#index">Home</a>
+        <a href="#about">About</a>
+    </div>
+
+
+    <div id="content">
+        
+   <h1>Random Red Panda Video</h1>
+    <div class="item">
+        <iframe  src="{{v_url}}" allowfullscreen></iframe>
+    </div>
+
+   <div class="item">
+        <form method="POST" action="/download_video">
+            <input type="hidden" name="vid_url" value="{{ v_url }}">
+            <button id="myButton" type="submit"  >Download video</button>
+       </form>
+
+   </div>
+    </div>
+</body>
+</html>
