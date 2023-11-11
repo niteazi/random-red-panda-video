@@ -23,7 +23,7 @@ def download():
         youtubeObject = YouTube(vid_url)
         youtubeObject = youtubeObject.streams.get_highest_resolution()
         try:
-            youtubeObject.download('C:/Users/nitea/Downloads') #download in downloads
+            youtubeObject.download('/Downloads') #download in downloads
         except:
             print("An error has occurred")
         print("Download is completed successfully")
