@@ -2,7 +2,7 @@ from flask import Flask, render_template,request,redirect,url_for
 from pytube import Search,YouTube
 import random 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 def random_video(query):
